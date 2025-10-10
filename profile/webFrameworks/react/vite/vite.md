@@ -9,8 +9,8 @@ For our toolchain we are going to use [Vite](https://vitejs.dev/). Vite bundles 
 We can use Vite to build our first React-based web application. Open your command console and run the following commands:
 
 ```sh
-npm create vite@latest demoVite -- --template react
-cd demoVite
+npm create vite@latest demovite -- --template react
+cd demovite
 npm install
 npm run dev
 ```
