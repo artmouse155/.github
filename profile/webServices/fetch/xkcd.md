@@ -76,4 +76,4 @@ function App() {
 <p>{comic.alt}</p>
 ```
 11) Save away your codepen and Celebrate!
-12) If you get stuck, you can [look here]("https://codepen.io/mjcleme/pen/JoGrZRq")
+12) If you get stuck, you can [look here](https://codepen.io/mjcleme/pen/JoGrZRq)
