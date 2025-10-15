@@ -21,21 +21,21 @@ and the following in the html pane
 ```
 and set the JS Preprocessor to Babel
 
-2) Make sure you dont get any errors in your console.
+3) Make sure you dont get any errors in your console.
    
 4) Add a state variable at the top of your App component
 ```js
   const [comic, setComic] = useState("NULL");
 ```
 
-4) Add a useEffect segment that will be run each time the component is loaded. Make sure you can see the console.log()
+5) Add a useEffect segment that will be run each time the component is loaded. Make sure you can see the console.log()
 ```js
   useEffect(() => {
     console.log("In useEffect");
   }, []);
 ```
 
-5) Now add the fetch code to get the data from the API
+6) Now add the fetch code to get the data from the API
 ```js
  let url = "https://xkcd.vercel.app/?comic=3153";
  fetch(url)
@@ -46,7 +46,7 @@ and set the JS Preprocessor to Babel
   });
 ```
 
-6) At this point you should be able to see the data returned by the API in the console.
+7) At this point you should be able to see the data returned by the API in the console.
 Notice that the comic has a title, a num, a day, month, year, img and alt.
 We will use these in displaying the comic.
 
@@ -60,19 +60,19 @@ function App() {
 }
 ```
 
-8) Now add the comic number and date.  Make sure they display correctly.
+9) Now add the comic number and date.  Make sure they display correctly.
 ```js
 <p>
  Comic #{comic.num} - {comic.day}/{comic.month}/{comic.year}
 </p>
 ```
 
-9) Now add the image and the alt text for the image.  Make sure they display correctly.
+10) Now add the image and the alt text for the image.  Make sure they display correctly.
 ```js
 <div>
   <img src={comic.img} alt={comic.alt} title={comic.alt} />
 </div>
 <p>{comic.alt}</p>
 ```
-10) Save away your codepen and Celebrate!
-11) If you get stuck, you can [look here]("https://codepen.io/mjcleme/pen/JoGrZRq")
+11) Save away your codepen and Celebrate!
+12) If you get stuck, you can [look here]("https://codepen.io/mjcleme/pen/JoGrZRq")
